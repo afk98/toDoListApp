@@ -1,0 +1,14 @@
+<div class="main-container">
+
+    <mat-calendar [(selected)]="selectedDate">
+    
+    </mat-calendar>
+
+    <div class="date-label">
+        {{selectedDate.toLocaleDateString()}}
+    </div>
+
+    <button mat-raised-button color="warn" class="example-button-row" [routerLink]="['/tasks']">
+       Tasks
+    </button>
+</div>
